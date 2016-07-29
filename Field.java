@@ -6,8 +6,18 @@ public class Field {
 		 * 2 : O
 		 * 3 : Határ
 		 */
-	public Field(){
+	private int x;
+	private int y;
+	public Field(int i, int j){
+		x=i;
+		y=j;
 		State=0;
+	}
+	public int getX(){
+		return x;
+	}
+	public int getY(){
+		return y;
 	}
 	public byte getState(){
 		return State;
